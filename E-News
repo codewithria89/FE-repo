@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Daily News</title>
+</head>
+<body>
+
+    <center>
+        <h1>📰 My Daily News</h1>
+    </center>
+    <hr>
+
+    <h2>Breaking News</h2>
+    <p>
+        Technology is growing <i>rapidly</i> in today's world. Students are learning 
+        <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.
+    </p>
+
+    <hr>
+
+    <h2>Today's Highlight</h2>
+    <p>
+        The formula of water is H<sub>2</sub>O and Einstein's famous equation is 
+        E = mc<sup>2</sup>.
+    </p>
+
+    <p><small>This is small text</small></p>
+    <p><big>This is big text</big></p>
+
+    <p>
+        <del>Old news</del> → <ins>Updated news!</ins>
+    </p>
+
+    <hr>
+
+    <h2>Weather Report</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>City</th>
+            <th>Temp</th>
+        </tr>
+        <tr>
+            <td>Bangalore</td>
+            <td>28°C</td>
+        </tr>
+        <tr>
+            <td>Delhi</td>
+            <td>35°C</td>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>30°C</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Read More</h2>
+    <p>
+        Visit <a href="https://www.bbc.com/news" target="_blank">BBC News</a>
+    </p>
+
+</body>
+</html>
