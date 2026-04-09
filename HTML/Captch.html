@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Form</title>
+</head>
+<body>
+    <h2>Captcha Form</h2>
+    <form>
+        <label for = "captcha">Enter Captcha</label>
+        <input type="text" id="captcha" placeholder="Enter Captcha..." name="captcha">
+        <br>
+        <br>
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Enter name..." id="username" name="userrname">
+        <br>
+        <br>
+        <label for="em">Email</label>
+        <input type="email" name="email" id="em">
+        <br>
+        <br>
+        <label for="pass">Password: <span style="color: red;"> * </span></label>
+        <input type="password" name="password" id="pass" required>
+        <br>
+        <br>
+        <label>Mobile :</label>
+        <input type="tel">
+        <br>
+        <br>
+        <label>Age: </label>
+        <input type="number" min="1" max="150"> 
+        <br>
+        <br>
+        <label>Date Of Birth:</label>
+        <input type="date">
+        <br>
+        <br>
+        <label>Date of Birth with time:</label>
+        <input type="datetime-local">
+        <br>
+        <br>
+        <label>Profile Url :</label>
+        <input type="url">
+        <br>
+        <br>
+        <label>Other:</label>
+        <input type="week">
+        <input type="color">
+        <br>
+        <br>
+        <label>Picture</label>
+        <input type="image" src="pic.jpg" width="50%" height="90">
+        <br>
+        <br>
+        <label>Upload Pan Card:</label>
+        <input type="file">
+        <br>
+        <br>
+        <label>Rating</label>
+        <input type="range" min="1" max="5">
+        <br>
+        <br>
+        <label><input type="checkbox" name="opt1" value="cash">Cash</label>
+        <label><input type="checkbox" name="opt2" value="upi">UPI</label>
+        <br>
+        <br> 
+        <input type="submit"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="cancel">
+        <br>
+        <br>
+        <button type="button">help center</button>
+        <br>
+    </form>
+</body>
+</html>
