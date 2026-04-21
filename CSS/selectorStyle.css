@@ -1,0 +1,38 @@
+/*Universal selector*/
+ * {
+    font-style: italic;
+    color: blue;
+ }
+
+ /* Type/Tag selector */
+
+ p {
+    background-color: rgb(217, 240, 170);
+    color: rgb(85, 18, 147);
+
+ }
+
+ h3 {
+    text-align: center;
+ }
+
+ /*ID Selector*/
+
+ #para {
+    text-align: center;
+ }
+
+ /* Class selector */
+.redpara {
+   color: red;
+}
+
+.line {
+   text-decoration: underline;
+}
+
+/*Group selector */
+
+h1,h3,h5 {
+   background-color: aquamarine;
+}
