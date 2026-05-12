@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Joke Universe</title>
+
+<style>
+
+/* Background Animation */
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    height:100vh;
+    background:linear-gradient(-45deg,#1d2b64,#f8cdda,#1fa2ff,#12d8fa);
+    background-size:400% 400%;
+    animation:bgMove 12s infinite alternate;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+/* Container */
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    width:80%;
+}
+
+/* Card Style */
+
+.card{
+    position:relative;
+    height:180px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.08) rotate(1deg);
+    box-shadow:0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Hidden Joke Text */
+
+.joke{
+    position:absolute;
+    opacity:0;
+    transform:translateY(50px);
+    text-align:center;
+    padding:15px;
+    transition:0.6s;
+}
+
+.card:hover .joke{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Title */
+
+.title{
+    font-size:20px;
+    font-weight:bold;
+    transition:0.5s;
+}
+
+.card:hover .title{
+    opacity:0;
+}
+
+/* Floating animation */
+
+.card{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<span class="title">Hover Me 😎</span>
+<p class="joke">Why do programmers hate nature?<br>Too many bugs.</p>
+</div>
+
+<div class="card">
+<span class="title">Secret Block 🤫</span>
+<p class="joke">I told my code a joke…<br>It didn’t compile 😂</p>
+</div>
+
+<div class="card">
+<span class="title">Developer Truth 💻</span>
+<p class="joke">99 little bugs in the code,<br>Take one down → 117 bugs.</p>
+</div>
+
+<div class="card">
+<span class="title">Frontend Life 🎨</span>
+<p class="joke">Works on my machine ✔️</p>
+</div>
+
+<div class="card">
+<span class="title">AI Joke 🤖</span>
+<p class="joke">I asked AI for emotions…<br>It returned NULL.</p>
+</div>
+
+<div class="card">
+<span class="title">Last Secret 🔥</span>
+<p class="joke">Sleep().repeat();<br>Deadline approaching...</p>
+</div>
+
+</div>
+
+</body>
+</html>
