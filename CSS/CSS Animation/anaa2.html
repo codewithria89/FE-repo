@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Joke Gallery</title>
+
+<style>
+
+/* Animated Background */
+
+body{
+    margin:0;
+    font-family:Segoe UI;
+    height:100vh;
+    background:linear-gradient(-45deg,#141e30,#243b55,#ff9966,#ff5e62);
+    background-size:400% 400%;
+    animation:bg 10s infinite alternate;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@keyframes bg{
+    0%{background-position:0%;}
+    100%{background-position:100%;}
+}
+
+/* Container */
+
+.container{
+    width:85%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Card Design */
+
+.card{
+    position:relative;
+    height:250px;
+    border-radius:15px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    color:white;
+    text-align:center;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* Title */
+
+.title{
+    position:absolute;
+    width:100%;
+    top:40%;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.5s;
+}
+
+/* Joke Text */
+
+.joke{
+    position:absolute;
+    bottom:80px;
+    opacity:0;
+    padding:10px;
+    transform:translateY(40px);
+    transition:0.6s;
+}
+
+/* Funny Image */
+
+img{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    opacity:0;
+    transform:scale(0.5);
+    transition:0.6s;
+}
+
+/* Hover Effects */
+
+.card:hover .title{
+    opacity:0;
+}
+
+.card:hover .joke{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card:hover img{
+    opacity:1;
+    transform:scale(1);
+}
+
+img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Card 1 -->
+<div class="card">
+<div class="title">Hover for Joke 😎</div>
+<div class="joke">Why programmers prefer dark mode?<br>Because light attracts bugs!</div>
+<img src="mazak1.jpg">
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+<div class="title">Developer Secret 🤫</div>
+<div class="joke">I fixed a bug without StackOverflow.<br>I feel powerful.</div>
+<img src="mazak2.jpg">
+</div>
+
+<!-- Card 3 -->
+<div class="card">
+<div class="title">Coding Life 💻</div>
+<div class="joke">My code works…<br>I don’t know why.</div>
+<img src="m3.png">
+</div>
+
+<!-- Card 4 -->
+<div class="card">
+<div class="title">Deadline Mode 🔥</div>
+<div class="joke">Coffee + Panic = Project Complete</div>
+<img src="m4.png">
+</div>
+
+</div>
+
+</body>
+</html>
