@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MindVerse Ultimate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BOOT SCREEN -->
+<div id="boot">
+<h1 id="bootText"></h1>
+<p id="loading">Loading 0%</p>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="hidden">
+<h2>AI Authentication</h2>
+<input type="password" id="pass" placeholder="Enter Access Code">
+<button onclick="login()">LOGIN</button>
+<p id="loginMsg"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+
+<h1>🧠 MindVerse AI Dashboard</h1>
+
+<div class="cards">
+
+<div class="card" onclick="activate(this)">
+AI Scan
+</div>
+
+<div class="card" onclick="activate(this)">
+Future Prediction
+</div>
+
+<div class="card" onclick="activate(this)">
+Developer Mode
+</div>
+
+</div>
+
+<!-- CHATBOT -->
+<div class="chatbox">
+<div id="chat"></div>
+<input id="userInput" placeholder="Ask AI something...">
+<button onclick="sendMsg()">Send</button>
+</div>
+
+<button onclick="secret()">Unlock Ultimate Mode</button>
+<p id="secretText"></p>
+
+</div>
+
+<script src="typing.js"></script>
+<script src="chatbot.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

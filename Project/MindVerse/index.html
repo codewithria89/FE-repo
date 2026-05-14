@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindVerse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="intro">
+<h1>🌌 Welcome to MindVerse</h1>
+<button onclick="enterWorld()">Enter</button>
+</div>
+
+<section id="world" class="hidden">
+
+<h2>Choose Your Reality</h2>
+
+<div class="cards">
+
+<div class="card" onclick="showMessage(this)">
+✨ Creativity
+<p class="message">Your ideas shape the universe.</p>
+</div>
+
+<div class="card" onclick="showMessage(this)">
+🧠 Knowledge
+<p class="message">Learning never ends.</p>
+</div>
+
+<div class="card" onclick="showMessage(this)">
+🚀 Future
+<p class="message">You are building tomorrow.</p>
+</div>
+
+</div>
+
+<h3>Change Mood</h3>
+<button onclick="changeMood()">Change Background</button>
+
+<br><br>
+<button onclick="unlockSecret()">Unlock Secret</button>
+<p id="secret"></p>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

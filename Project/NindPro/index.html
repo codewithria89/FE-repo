@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindVerse Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="login-screen">
+<h1 id="typing"></h1>
+<button onclick="enterSystem()">ACCESS SYSTEM</button>
+</div>
+
+<div id="system" class="hidden">
+
+<h2>🧠 MindVerse AI Activated</h2>
+
+<div class="panel">
+<button onclick="reveal('one')">Scan Creativity</button>
+<p id="one" class="hidden-text">
+Creativity Level: 99% 🚀
+</p>
+</div>
+
+<div class="panel">
+<button onclick="reveal('two')">Analyze Future</button>
+<p id="two" class="hidden-text">
+Future Status: Successful Developer 🔥
+</p>
+</div>
+
+<button onclick="easterEgg()">Unlock Secret Mode</button>
+<p id="secret"></p>
+
+</div>
+
+<script src="typing.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
