@@ -1,0 +1,389 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anjali Kumari | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AK.</div>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+
+    <div class="hero-content" data-aos="fade-right">
+
+      <p class="subtitle">Hello, I'm</p>
+
+      <h1>Anjali Kumari</h1>
+
+      <h2>
+        <span class="typing"></span>
+      </h2>
+
+      <p class="hero-description">
+        Aspiring Software Engineer passionate about building scalable applications,
+        solving problems, and exploring machine learning technologies.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="anjaliResume.pdf" class="btn primary" download>
+          Download Resume
+        </a>
+
+        <a href="#contact" class="btn secondary">
+          Contact Me
+        </a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:anjalikr0922@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-image" data-aos="fade-left">
+      <div class="image-border">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile"/>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-card glass" data-aos="zoom-in">
+
+      <p>
+        I am an aspiring Software Engineer currently pursuing Computer Science
+        and Engineering at Sambhram Institute of Technology, Bengaluru.
+        I have a strong interest in Java development, machine learning,
+        web technologies, and problem solving.
+      </p>
+
+      <p>
+        Passionate about creating intelligent applications and modern digital experiences,
+        I continuously work on enhancing my skills in full-stack development,
+        backend logic, and AI-powered solutions.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-container">
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>Java</h3>
+        <div class="progress">
+          <span style="width:90%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>Python</h3>
+        <div class="progress">
+          <span style="width:85%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>HTML & CSS</h3>
+        <div class="progress">
+          <span style="width:88%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>JavaScript</h3>
+        <div class="progress">
+          <span style="width:80%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>Machine Learning</h3>
+        <div class="progress">
+          <span style="width:75%"></span>
+        </div>
+      </div>
+
+      <div class="skill-card glass" data-aos="fade-up">
+        <h3>Problem Solving</h3>
+        <div class="progress">
+          <span style="width:92%"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+
+    <div class="section-title">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item glass" data-aos="fade-left">
+        <h3>Java Full Stack Intern</h3>
+        <h4>Kodnest</h4>
+        <span>Feb 2026 – Present</span>
+
+        <p>
+          Trained in Core Java, OOP, JDBC, HTML, CSS, and JavaScript.
+          Working on scalable web applications and full stack projects
+          with backend logic and database integration.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+
+    <div class="section-title">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card glass" data-aos="zoom-in">
+
+        <h3>Personality-Aware Tool</h3>
+
+        <p>
+          Chrome extension integrated with machine learning to predict
+          personality traits and privacy preferences based on browsing behavior.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>Machine Learning</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="#" class="btn primary">GitHub</a>
+          <a href="#" class="btn secondary">Live Demo</a>
+        </div>
+
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass" data-aos="zoom-in">
+
+        <h3>AI Interview App</h3>
+
+        <p>
+          AI-powered web application to simulate technical interviews
+          for full-stack development roles with interactive dashboards.
+        </p>
+
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="#" class="btn primary">GitHub</a>
+          <a href="#" class="btn secondary">Live Demo</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+
+    <div class="section-title">
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu-grid">
+
+      <div class="edu-card glass" data-aos="fade-up">
+        <h3>B.Tech CSE</h3>
+        <p>Sambhram Institute of Technology</p>
+        <span>2022 - 2026</span>
+        <h4>74.4%</h4>
+      </div>
+
+      <div class="edu-card glass" data-aos="fade-up">
+        <h3>Intermediate</h3>
+        <p>R.K. College, Bihar</p>
+        <span>2020 - 2022</span>
+        <h4>64%</h4>
+      </div>
+
+      <div class="edu-card glass" data-aos="fade-up">
+        <h3>10th Grade</h3>
+        <p>Triloknath +2 High School</p>
+        <span>2020</span>
+        <h4>78%</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements section" id="achievements">
+
+    <div class="section-title">
+      <h2>Certifications</h2>
+    </div>
+
+    <div class="achievement-grid">
+
+      <div class="achievement-card glass">
+        <i class="fa-solid fa-award"></i>
+        <h3>Google AI Essentials</h3>
+        <p>Coursera • Feb 2025</p>
+      </div>
+
+      <div class="achievement-card glass">
+        <i class="fa-solid fa-award"></i>
+        <h3>Java Certification</h3>
+        <p>Udemy • Dec 2024</p>
+      </div>
+
+      <div class="achievement-card glass">
+        <i class="fa-solid fa-award"></i>
+        <h3>Time Management</h3>
+        <p>Infosys Springboard • June 2025</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+
+    <div class="section-title">
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-container glass">
+
+      <div class="contact-info">
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          anjalikr0822@gmail.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          7779954710
+        </p>
+
+      </div>
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Message"></textarea>
+
+        <button class="btn primary">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Anjali Kumari | Portfolio</p>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
