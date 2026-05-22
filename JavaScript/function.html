@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Functions Example</h1>
+
+    <button onclick="greet()">Simple Function</button>
+    <button onclick="showSum(10, 20)">Function with Parameters</button>
+    <button onclick="displaySquare()">Function Returning Value</button>
+
+    <div id="output"></div>
+
+    <script>
+        // Simple Function
+        function greet() {
+            document.getElementById("output").innerHTML =
+                "Hello! Welcome to JavaScript Functions.";
+        }
+
+        // Function with Parameters
+        function showSum(a, b) {
+            document.getElementById("output").innerHTML =
+                "Sum = " + (a + b);
+        }
+
+        // Function Returning Value
+        function square(num) {
+            return num * num;
+        }
+
+        function displaySquare() {
+            let result = square(8);
+            document.getElementById("output").innerHTML =
+                "Square of 8 = " + result;
+        }
+    </script>
+
+</body>
+</html>
