@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+    <h2>Student Grade Calculator</h2>
+
+    <button onclick="calculateGrade()">Calculate Grade</button>
+
+    <p id="result"></p>
+
+    <script>
+        function getGrade(marks) {
+            if (marks >= 90) {
+                return "A";
+            } else if (marks >= 75) {
+                return "B";
+            } else if (marks >= 60) {
+                return "C";
+            } else if (marks >= 40) {
+                return "D";
+            } else {
+                return "F";
+            }
+        }
+
+        function calculateGrade() {
+            let marks = Number(prompt("Enter Student Marks:"));
+
+            if (isNaN(marks)) {
+                document.getElementById("result").innerHTML =
+                    "Please enter a valid number!";
+                return;
+            }
+
+            let grade = getGrade(marks);
+
+            document.getElementById("result").innerHTML =
+                "Marks: " + marks + "<br>Grade: " + grade;
+        }
+    </script>
+
+</body>
+</html>
