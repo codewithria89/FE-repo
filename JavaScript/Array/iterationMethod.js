@@ -1,6 +1,7 @@
 //foreach function
 let fruits = ["apple", "banana", "cherry"]
 fruits.forEach(fruit => console.log(fruit)) //fruit- is act as pointer
+fruits.forEach(fruit => process.stdout.write(fruit)) //fruit- is act as pointer
 
 let numbers = [1,2,3]
 numbers.forEach(i => console.log(`The numbers is ${i}`));
