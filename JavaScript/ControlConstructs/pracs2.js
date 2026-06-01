@@ -13,11 +13,11 @@ while(i <= 5) {
 //3
 let pin;
 
-/*do {
+do {
     pin = prompt("Enter PIN:");
 } while (pin !== "1234");
 
-console.log("PIN Accepted");*/
+console.log("PIN Accepted");
 
 //4
 for (let i = 1; i <= 5; i++) {
