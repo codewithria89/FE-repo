@@ -13,11 +13,11 @@ while(i <= 5) {
 //3
 let pin;
 
-do {
+/*do {
     pin = prompt("Enter PIN:");
 } while (pin !== "1234");
 
-console.log("PIN Accepted");
+console.log("PIN Accepted");*/
 
 //4
 for (let i = 1; i <= 5; i++) {
@@ -34,4 +34,14 @@ for (let i = 1; i <= 5; i++) {
         continue;
     }
     console.log(i);
+}
+
+let fruits = ["Apple", "Banana", "Mango"];
+for(let fruit of fruits) {
+    console.log(fruit);
+}
+
+let student = {name: " John", age: 32, grade: " A"};
+for (let key in student){
+    console.log(key+ " is "+ student[key]);
 }

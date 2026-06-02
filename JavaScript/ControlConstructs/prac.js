@@ -76,3 +76,13 @@ switch (month) {
     default:
         console.log("Invalid Month");
 }
+
+      do {
+            pin = prompt("Enter your 4-digit PIN:");
+            if (pin === "1234") {
+                alert("PIN accepted. Access granted.");
+                break;
+            } else {
+                alert("Incorrect PIN. Please try again.");
+            }
+        } while (true);
