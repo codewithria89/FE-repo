@@ -45,3 +45,7 @@ let student = {name: " John", age: 32, grade: " A"};
 for (let key in student){
     console.log(key+ " is "+ student[key]);
 }
+
+/* 1.  given string and a character calculate number of occurrence of that character in given string.
+   2.  Given an array of numbers find the highest number.
+   3.  Given an array of numbers find the second highest number. */
