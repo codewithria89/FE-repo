@@ -54,4 +54,16 @@ function reverseNumber(num) {
 
 console.log(reverseNumber(123));
 
+/*w/o inbuilt function*/
+let n1 = 1234
+function revNum(n1) {
+    let reverse = 0;
+    while(n1 > 0) {
+    let rem = n1 % 10;
+    reverse = reverse * 10 + rem ;
+    n1 = parseInt(n1 / 10);
+    }
+  return reverse;
+}
+console.log(revNum(n1));
 
