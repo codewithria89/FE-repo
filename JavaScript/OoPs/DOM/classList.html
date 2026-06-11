@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List in JS</title>
+    <style>
+        .highlight {
+            background-color: brown;
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">Hello Everyone, welcome to Kodnest</h1>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button>
+    <button onclick="toggleStyle()">Toggle style</button>
+    <button onclick="containStyle()">Contain style</button>
+
+    <script>
+        txt = document.getElementById("text")
+        function addStyle() {
+            txt.classList.add("highlight")
+            alert("Add Highlight")
+        }
+
+        function removeStyle() {
+            txt.classList.remove("highlight")
+            alert("removing highlight")
+        }
+
+        function toggleStyle() {
+            txt.classList.toggle("highlight")
+        }
+
+        function containStyle() {
+            
+            if(txt.classList.contains("highlight")) {
+                alert("Highlight has been applied");
+            } else {
+                alert("Highlight has not been applied");
+            }
+        }
+    </script>
+</body>
+</html>
