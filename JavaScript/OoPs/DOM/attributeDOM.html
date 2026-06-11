@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute in JS</title>
+</head>
+<body>
+    <a href="https://www.kodnest.com"> Click to visit KodNest</a>
+    <br>
+    <br>
+    <button onclick="setAttr()">Set Attribute</button>
+    <button onclick="getAttr()">Get Attribute</button>
+    <button onclick="removeAttr()">Remove Attribute</button>
+
+    <script>
+        let link = document.querySelector("a")
+        function setAttr() {
+            link.setAttribute("href", "https://www.instagram.com")
+            link.innerText = "Click to visit Instagram"
+        }
+
+        function getAttr() {
+            let url = link.getAttribute("href")
+            alert("The url is " + url)
+        }
+
+        function removeAttr() {
+            let url = link.removeAttribute("href")
+            alert("The href attribute is removed")
+        }
+    </script>
+</body>
+</html>
